@@ -1,0 +1,82 @@
+:root, html.darkmode {
+  --background-color: #000000;
+  --color-primary: #FFFFFF;
+  --color: #FFFFFFB3;
+  --color-disabled: #FFFFFF4D;
+
+  --highlight: #408EEA;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url('fonts/Gilroy-Heavy.woff2') format('woff2'),
+    url('fonts/Gilroy-Heavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  unicode-range: U+000-5FF;
+  font-display: swap;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  color: var(--color);
+  background-color: var(--background-color);
+  font-size: 10px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: gilroy, 'Helvetica Neue', sans-serif;
+  color: var(--color-primary);
+  font-weight: 900;
+  font-size: 8rem;
+  line-height: 1em;
+  margin: 0 0 0.3em;
+}
+
+h1 > small, h2 > small, h3 > small {
+  /* font-family: 'Helvetica Neue', sans-serif; */
+  /* font-weight: 100; */
+  font-size: 1em;
+  color: var(--color-disabled);
+}
+
+h1 {
+  display: inline-flex;
+  line-height: 10rem;
+  background-image: linear-gradient(rgb(54, 177, 197), rgb(54, 177, 197));
+  background-repeat: no-repeat;
+  background-size: 100% .1em;
+  background-position: 0 1.05em;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+button, a.button {
+  cursor: pointer;
+  color: var(--color-primary);
+  font-size: 0.6em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: gilroy, 'Helvetica Neue', sans-serif;
+  line-height: 4em;
+  letter-spacing: 0.2em;
+  padding: 1.5rem 3rem;
+  border-radius: 4rem;
+  border: solid 0.2rem;
+}

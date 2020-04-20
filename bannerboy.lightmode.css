@@ -1,0 +1,15 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --background-color: #EEEEEE;
+    --color-primary: #000000E0;
+    --color: #0000008A;
+    --color-disabled: #00000061;
+  }
+}
+
+html.lightmode {
+  --background-color: #EEEEEE;
+  --color-primary: #000000E0;
+  --color: #0000008A;
+  --color-disabled: #00000061;
+}
