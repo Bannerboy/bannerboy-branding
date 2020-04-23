@@ -4,7 +4,14 @@
   --color: #FFFFFFB3;
   --color-disabled: #FFFFFF4D;
 
-  --highlight: #408EEA;
+  --color-purple: #AA7FF2;
+  --color-pink: #D291CF;
+  --color-red: #E6515B;
+  --color-yellow: #FBE470;
+  --color-green: #6DD982;
+  --color-turquoise: #72F6FD;
+  --color-bannerboy-blue: #5FADD5;
+  --color-dark-blue: #162B2F;
 }
 
 @font-face {
@@ -57,7 +64,7 @@ h1 > small, h2 > small, h3 > small {
 h1 {
   display: inline-flex;
   line-height: 10rem;
-  background-image: linear-gradient(rgb(54, 177, 197), rgb(54, 177, 197));
+  background-image: linear-gradient(var(--color-bannerboy-blue), var(--color-bannerboy-blue));
   background-repeat: no-repeat;
   background-size: 100% .1em;
   background-position: 0 1.05em;
