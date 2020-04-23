@@ -1,0 +1,646 @@
+<!-- inspired from https://github.com/bjankord/Style-Guide-Boilerplate -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bannerboy Branding Preview</title>
+    <link rel="stylesheet" href="bannerboy.css">
+    <link rel="stylesheet" href="bannerboy.lightmode.css">
+    <link rel="stylesheet" href="style.css">
+    <style media="screen">
+      .color-swatch {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <hgroup>
+        <img src="img/bannerboy.svg" alt="Bannerboy Logo" width="150px">
+      </hgroup>
+
+      <a href="javascript:switchTheme();" class="button">Toggle light/dark mode</a>
+
+      <ul id="index">
+        <!-- This will be filled by JavaScript -->
+      </ul>
+    </header>
+    <main>
+      <section id="colors">
+        <h2>Colors</h2>
+
+        <div class="color-grid">
+          <div>
+            <div class="color-swatch" style="background-color: #AA7FF2"></div>
+            <div class="color-name">Purple</div>
+            <div class="color-hex">#AA7FF2</div>
+          </div>
+          <div>
+            <div class="color-swatch" style="background-color: #D291CF"></div>
+            <div class="color-name">Pink</div>
+            <div class="color-hex">#D291CF</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fonts">
+        <h2>Fonts</h2>
+      </section>
+
+      <section id="address">
+        <h2>Address</h2>
+        <address>
+          Company Name, Inc.<br>
+          811 7th Ave, Suite 700<br>
+          Manhattan, NY 10019<br>
+          USA
+        </address>
+      </section>
+
+      <section id="blockquote">
+        <h2>Blockquote</h2>
+        <blockquote>
+          <p>Some sort of famous witty quote marked up with a &lt;blockquote> and a child &lt;p> element.</p>
+        </blockquote>
+        <blockquote>Even better philosophical quote marked up with just a &lt;blockquote> element.</blockquote>
+      </section>
+
+      <section id="details">
+        <h2>Details</h2>
+        <details open>
+          <summary>More info</summary>
+          <div>
+            <p>Additional information</p>
+            <ul>
+              <li>Point 1</li>
+              <li>Point 2</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>More info</summary>
+          <div>
+            <p>Additional information</p>
+            <ul>
+              <li>Point 1</li>
+              <li>Point 2</li>
+            </ul>
+          </div>
+        </details>
+        <details>
+          <summary>More info</summary>
+          <div>
+            <p>Additional information</p>
+            <ul>
+              <li>Point 1</li>
+              <li>Point 2</li>
+            </ul>
+          </div>
+        </details>
+      </section>
+
+      <section id="figure">
+        <h2>Figure</h2>
+        <figure>
+          <img src="http://placehold.it/240x240" alt="Image alt text 1">
+          <figcaption>Figcaption content</figcaption>
+        </figure>
+
+        <figure>
+          <img src="http://placehold.it/240x240" alt="Image alt text 2">
+          <figcaption>
+            <h4>Figure Title</h4>
+            Figcaption content
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="form-buttons">
+        <h2>Form Buttons</h2>
+        <form>
+          <fieldset>
+            <legend>Buttons</legend>
+            <p><input type="button" value="Input type button"></p>
+            <p><input type="reset" value="Input type reset"></p>
+            <p><input type="submit" value="Input type submit"></p>
+            <p><input type="submit" value="Input type submit disabled" disabled></p>
+            <p><button type="button">Button type button</button></p>
+            <p><button type="reset">Button type reset</button></p>
+            <p><button type="submit">Button type submit</button></p>
+            <p><button type="button" disabled>Button type button disabled</button></p>
+            <p><button>Button</button></p>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="form-fields-default">
+        <h2>Form Fields Default</h2>
+        <form>
+          <fieldset>
+            <legend>Form Fields</legend>
+            <div><label for="text-input">Text input</label> <input id="text-input" type="text"></div>
+            <div><label for="text-input-placeholder">Text input with placeholder</label> <input id="text-input-placeholder" type="text" placeholder="I'm placeholder text"></div>
+            <div><label for="readonly-input">Readonly input</label> <input id="readonly-input" type="text" value="Read only text input" readonly></div>
+            <div><label for="disabled-input">Disabled input</label> <input id="disabled-input" type="text" value="Disabled text input" disabled></div>
+            <div><label for="required-input">Required input <span class="required">*</span></label> <input id="required-input" type="text" required aria-required="true"></div>
+            <div><label for="email-input">Email input</label> <input id="email-input" type="email"></div>
+            <div><label for="search-input">Search input</label> <input id="search-input" type="search"></div>
+            <div><label for="speech-input">Speech recognition input</label> <input id="speech-input" type="text" name="speech" x-webkit-speech=""></div>
+            <div><label for="tel-input">Tel input</label> <input id="tel-input" type="tel"></div>
+            <div><label for="url-input">URL input</label> <input id="url-input" type="url" placeholder="http://"></div>
+            <div><label for="password-input">Password input</label> <input id="password-input" type="password" value="password"></div>
+            <div><label for="select-field">Select field</label> <select id="select-field"><option selected="selected">Option 01</option><option>Option 02</option></select></div>
+            <div><label for="multiple-select-field">Multiple select field</label><select id="multiple-select-field" multiple size="5"><option>Option 1</option><option>Option 2</option><option>Option 3</option><option>Option 4</option><option>Option 5</option><option>Option 6</option><option>Option 7</option><option>Option 8</option><option>Option 9</option><option>Option 10</option></select></div>
+            <div><label for="radio-input"><input id="radio-input" type="radio" name="rad"> Radio input</label></div>
+            <div><label for="checkbox-input"><input id="checkbox-input" type="checkbox"> Checkbox input</label></div>
+            <div><label for="file-input">File input</label> <input id="file-input" type="file"></div>
+            <div><label for="textarea">Textarea</label> <textarea id="textarea" cols="30" rows="5" >Textarea text</textarea></div>
+            <div><label for="color-input">Color input</label> <input id="color-input" type="color" value="#000000"></div>
+            <div><label for="number-input">Number input</label> <input id="number-input" type="number" value="5" min="0" max="10"></div>
+            <div><label for="range-input">Range input</label> <input id="range-input" type="range" value="0" min="0" max="100"> <output>0</output>
+              <script>
+                if (document.querySelector) {
+                  document.querySelector('#range-input').onchange = function(e) {
+                    e.target.nextElementSibling.innerText = e.target.value;
+                  }
+                }
+              </script>
+            </div>
+            <div><label for="date-input">Date input</label> <input id="date-input" type="date"></div>
+            <div><label for="month-input">Month input</label> <input id="month-input" type="month"></div>
+            <div><label for="week-input">Week input</label> <input id="week-input" type="week"></div>
+            <div><label for="time-input">Time input</label> <input id="time-input" type="time"></div>
+            <div><label for="datetime-input">Datetime input</label> <input id="datetime-input" type="datetime"></div>
+            <div><label for="datetime-local-input">Datetime-local input</label> <input id="datetime-local-input" type="datetime-local"></div>
+          </fieldset>
+          <input type="submit" value="Submit form">
+        </form>
+      </section>
+
+      <section id="form-fields-disabled">
+        <h2>Form Fields Disabled</h2>
+        <form>
+          <fieldset>
+            <legend>Disabled Form Fields</legend>
+            <div><label for="text-input-disabled">Disabled text input</label> <input id="text-input-disabled" type="text" value="Disabled text input" disabled></div>
+            <div><label for="select-field-disabled">Disabled select field</label> <select id="select-field-disabled" disabled><option selected="selected">Option 01</option><option>Option 02</option></select></div>
+            <div><label for="file-input-disabled">Disabled file input</label> <input id="file-input-disabled" type="file" disabled></div>
+            <div><label for="radio-input-disabled"><input id="radio-input-disabled" type="radio" name="rad" disabled> Disabled radio input</label></div>
+            <div><label for="checkbox-input-disabled"><input id="checkbox-input-disabled" type="checkbox" disabled> Disabled checkbox input</label></div>
+            <div><label for="color-input-disabled">Disabled color input</label> <input id="color-input-disabled" type="color" value="#000000" disabled></div>
+            <div><label for="range-input-disabled">Disabled range input</label> <input id="range-input-disabled" type="range" disabled></div>
+            <div><label for="number-input-disabled">Disabled number input</label> <input id="number-input-disabled" type="number" value="5" min="0" max="10" disabled></div>
+            <div><label for="textarea-disabled">Disabled textarea</label> <textarea id="textarea-disabled" cols="30" rows="5" disabled>Textarea text</textarea></div>
+          </fieldset>
+          <input type="submit" value="Submit form">
+        </form>
+      </section>
+
+      <section id="form-fields-readonly">
+        <h2>Form Fields Readonly</h2>
+        <form>
+          <fieldset>
+            <legend>Readonly Form Fields</legend>
+            <div><label for="text-input-readonly">Readonly text input</label> <input id="text-input-readonly" type="text" value="Readonly text input" readonly></div>
+            <div><label for="color-input-readonly">Readonly color input</label> <input id="color-input-readonly" type="color" value="#000000" readonly></div>
+            <div><label for="range-input-readonly">Readonly range input</label> <input id="range-input-readonly" type="range" readonly></div>
+            <div><label for="number-input-readonly">Readonly number input</label> <input id="number-input-readonly" type="number" value="5" min="0" max="10" readonly></div>
+            <div><label for="textarea-readonly">Readonly textarea</label> <textarea id="textarea-readonly" cols="30" rows="5" readonly>Textarea text</textarea></div>
+          </fieldset>
+          <input type="submit" value="Submit form">
+        </form>
+      </section>
+
+      <section id="form-fields-with-datalist">
+        <h2>Form Fields With Datalist</h2>
+        <form>
+          <fieldset>
+            <legend>Form Fields With Datalist</legend>
+            <div>
+              <label for="text-input-datalist">Text input with datalist</label>
+              <input id="text-input-datalist" type="text" value="" list="fav-color" placeholder="Type your favorite color" />
+              <datalist id="fav-color">
+                <option value="Red">Red</option>
+                <option value="Orange">Orange</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Green">Green</option>
+                <option value="Blue">Blue</option>
+                <option value="Purple">Purple</option>
+              </datalist>
+            </div>
+            <div>
+              <label for="range-input-datalist">Range input with datalist</label>
+              <input id="range-input-datalist" type="range" value="0" min="0" max="100" list="number" />
+              <output>0</output>
+              <datalist id="number">
+                <option>25</option>
+                <option>50</option>
+                <option>75</option>
+              </datalist>
+              <script>
+                if (document.querySelector) {
+                  document.querySelector('#range-input-datalist').onchange = function(e) {
+                    e.target.nextElementSibling.innerText = e.target.value;
+                  }
+                }
+              </script>
+            </div>
+            <div>
+              <label for="color-input-datalist">Color input with datalist</label>
+              <input id="color-input-datalist" type="color" value="#000000" list="color" />
+              <datalist id="color">
+                <option>#ff0000</option>
+                <option>#0000ff</option>
+                <option>#00ff00</option>
+                <option>#ffff00</option>
+                <option>#00ffff</option>
+              </datalist>
+            </div>
+            <div>
+              <label for="date-input-datalist">Date input with datalist</label>
+              <input id="date-input-datalist" type="date" list="days" />
+              <datalist id="days">
+                <option label="Independence Day">2013-07-04</option>
+                <option label="Labor Day">2013-09-02</option>
+                <option label="Columbus Day">2013-10-14</option>
+              </datalist>
+            </div>
+            <div>
+              <label for="time-input-datalist">Time input with datalist</label>
+              <input id="time-input-datalist" type="time" list="times" />
+              <datalist id="times">
+                <option label="Midnight">00:00</option>
+                <option>06:00</option>
+                <option label="Noon">12:00</option>
+                <option>18:00</option>
+              </datalist>
+            </div>
+            <div>
+              <label for="datetime-local-input-datalist">Datetime-local input with datalist</label>
+              <input id="datetime-local-input-datalist" type="datetime-local" list="datetime-locals" />
+              <datalist id="datetime-locals">
+                <option label="Santa Visit">2012-12-24T23:59</option>
+                <option label="Chrismas party">2012-12-25T18:00</option>
+                <option>2012-12-30T00:00</option>
+                <option label="Happy New Year">2013-01-01T00:00</option>
+              </datalist>
+            </div>
+            <div>
+              <label for="month-input-datalist">Month input with datalist</label>
+              <input id="month-input-datalist" type="month" list="months" />
+              <datalist id="months">
+                <option label="End of last century">2000-12</option>
+                <option>2010-01</option>
+                <option>2011-01</option>
+                <option>2012-01</option>
+                <option>2013-01</option>
+              </datalist>
+            </div>
+            <div>
+              <label for="week-input-datalist">Week input with datalist</label>
+              <input id="week-input-datalist" type="week" list="weeks" />
+              <datalist id="weeks">
+                <option label="First week of 2013">2013-W01</option>
+                <option label="Second week of 2013">2013-W02</option>
+                <option label="13th week of 2013">2013-W13</option>
+                <option label="The last week of 2013">2013-W52</option>
+              </datalist>
+            </div>
+          </fieldset>
+          <input type="submit" value="Submit form">
+        </form>
+      </section>
+
+      <section id="form-fieldset">
+        <h2>Form Fieldset</h2>
+        <form>
+          <fieldset>
+            <legend>Fieldset with legend</legend>
+            <p><label for="fieldset-text-input1">Text Input</label> <input id="fieldset-text-input1" type="text"></p>
+          </fieldset>
+          <input type="submit" value="Submit form">
+        </form>
+      </section>
+
+      <section id="headings">
+        <h2>Headings</h2>
+
+        <h1>Heading 1 with <small>small text</small> and a <a href="#">link</a></h1>
+        <h2>Heading 2 with <small>small text</small> and a <a href="#">link</a></h2>
+        <h3>Heading 3 with <small>small text</small> and a <a href="#">link</a></h3>
+        <h4>Heading 4 with <small>small text</small> and a <a href="#">link</a></h4>
+        <h5>Heading 5 with <small>small text</small> and a <a href="#">link</a></h5>
+        <h6>Heading 6 with <small>small text</small> and a <a href="#">link</a></h6>
+      </section>
+
+      <section id="headings-articles">
+        <h2>Headings in Articles</h2>
+
+        <article>
+          <h1>Heading 1 (in article) with <small>small text</small> and a <a href="#">link</a></h1>
+          <h2>Heading 2 (in article) with <small>small text</small> and a <a href="#">link</a></h2>
+          <h3>Heading 3 (in article) with <small>small text</small> and a <a href="#">link</a></h3>
+          <h4>Heading 4 (in article) with <small>small text</small> and a <a href="#">link</a></h4>
+          <h5>Heading 5 (in article) with <small>small text</small> and a <a href="#">link</a></h5>
+          <h6>Heading 6 (in article) with <small>small text</small> and a <a href="#">link</a></h6>
+        </article>
+      </section>
+
+      <section id="headings-sections">
+        <h2>Headings in Sections</h2>
+
+        <section>
+          <h1>Heading 1 (in section) with <small>small text</small> and a <a href="#">link</a></h1>
+          <h2>Heading 2 (in section) with <small>small text</small> and a <a href="#">link</a></h2>
+          <h3>Heading 3 (in section) with <small>small text</small> and a <a href="#">link</a></h3>
+          <h4>Heading 4 (in section) with <small>small text</small> and a <a href="#">link</a></h4>
+          <h5>Heading 5 (in section) with <small>small text</small> and a <a href="#">link</a></h5>
+          <h6>Heading 6 (in section) with <small>small text</small> and a <a href="#">link</a></h6>
+        </section>
+      </section>
+
+      <hr>
+
+      <section id="hr">
+        <h2>Hr</h2>
+
+        <hr>
+      </section>
+
+      <section id="list-definition">
+        <h2>List Definition</h2>
+
+        <dl>
+          <dt>Description name</dt>
+          <dd>Description value</dd>
+          <dt>Description name</dt>
+          <dd>Description value</dd>
+          <dd>Description value</dd>
+          <dt>Description name</dt>
+          <dt>Description name</dt>
+          <dd>Description value</dd>
+        </dl>
+      </section>
+
+      <section id="list-ordered">
+        <h2>List Ordered</h2>
+
+        <ol>
+          <li>list item 1</li>
+          <li>list item 1
+            <ol>
+              <li>list item 2</li>
+              <li>list item 2
+                <ol>
+                  <li>list item 3</li>
+                  <li>list item 3</li>
+                </ol>
+              </li>
+              <li>list item 2</li>
+              <li>list item 2</li>
+            </ol>
+          </li>
+          <li>list item 1</li>
+          <li>list item 1</li>
+        </ol>
+      </section>
+
+      <section id="list-unordered">
+        <h2>List unordered</h2>
+
+        <ul>
+          <li>list item 1</li>
+          <li>list item 1
+            <ul>
+              <li>list item 2</li>
+              <li>list item 2
+                <ul>
+                  <li>list item 3</li>
+                  <li>list item 3</li>
+                </ul>
+              </li>
+              <li>list item 2</li>
+              <li>list item 2</li>
+            </ul>
+          </li>
+          <li>list item 1</li>
+          <li>list item 1</li>
+        </ul>
+      </section>
+
+      <section id="media">
+        <h2>Media</h2>
+
+        <h3>Default Image</h3>
+        <img src="http://placehold.it/240x240" alt="Image alt text 3"/>
+
+        <h3>Linked Image</h3>
+        <a href="#"><img src="http://placehold.it/240x240" alt="Image alt text 4"/></a>
+
+        <h3>Missing Image</h3>
+        <img alt="This is an example of a missing image"/>
+
+        <h3>Picture</h3>
+        <picture>
+          <source media="(min-width: 60em)" srcset="http://placehold.it/600x600"/>
+          <source media="(min-width: 40em)" srcset="http://placehold.it/300x300"/>
+          <source srcset="http://placehold.it/150x150"/>
+          <img src="http://placehold.it/150x150" alt="Image alt text 5"/>
+        </picture>
+
+        <h3>Svg</h3>
+        <svg width="200px" height="200px">
+          <circle cx="100" cy="100" r="100" fill="#ff0000" />
+        </svg>
+
+        <h3>Video</h3>
+        <div class="sg-video">
+          <video id="video1" controls preload poster="http://media.w3.org/2010/05/bunny/poster.png" width="640" height="360">
+            <source id="mp4" src="http://media.w3.org/2010/05/bunny/trailer.mp4" type="video/mp4"/>
+            <source id="ogv" src="http://media.w3.org/2010/05/bunny/trailer.ogv" type="video/ogg"/>
+            <p>Your user agent does not support the HTML5 Video element.</p>
+          </video>
+          <label class="sg-visually-hidden" for="video1">Video of Big Buck Bunny</label>
+        </div>
+
+        <h3>Missing Video</h3>
+        <video id="video2" controls></video>
+        <label class="sg-visually-hidden" for="video2">Missing video</label>
+
+        <h3>Audio</h3>
+        <audio controls>
+          <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.mp4" type='audio/mp4'/>
+          <source src="http://media.w3.org/2010/07/bunny/04-Death_Becomes_Fur.oga" type='audio/ogg; codecs=vorbis'/>
+          <p>Your user agent does not support the HTML5 Audio element.</p>
+        </audio>
+
+        <h3>Missing Audio</h3>
+        <audio controls></audio>
+      </section>
+
+      <section id="meter-and-progress">
+        <h2>Meter and Progress</h2>
+
+        <h3>Meter</h3>
+        <p><meter value="100" max="100" low="70" high="90">100%</meter> A meter displaying 100%.</p>
+        <p><meter value="85" max="100" low="70" high="90">85%</meter> A meter displaying 85%.</p>
+        <p><meter value="50" max="100" low="70" high="90">50%</meter> A meter displaying 50%.</p>
+        <p><meter value="0" max="100" low="70" high="90">0%</meter> A meter displaying 0%.</p>
+
+        <h3>Progress</h3>
+        <p><progress value="100" max="100">100%</progress> A progress displaying 100%.</p>
+        <p><progress value="85" max="100">85%</progress> A progress displaying 85%.</p>
+        <p><progress value="50" max="100">50%</progress> A progress displaying 50%.</p>
+        <p><progress value="0" max="100">0%</progress> A progress displaying 0%.</p>
+      </section>
+
+      <section id="preformated-text">
+        <h2>Preformated Text</h2>
+
+        <pre>
+        P R E F O R M A T T E D T E X T
+        ! " # $ % &amp; ' ( ) * + , - . /
+        0 1 2 3 4 5 6 7 8 9 : ; &lt; = &gt; ?
+        @ A B C D E F G H I J K L M N O
+        P Q R S T U V W X Y Z [ \ ] ^ _
+        ` a b c d e f g h i j k l m n o
+        p q r s t u v w x y z { | } ~
+        </pre>
+
+        <h3>Pre Code</h3>
+        <pre><code>&lt;html>
+          &lt;head>
+          &lt;/head>
+          &lt;body>
+              &lt;div class="main"> &lt;div>
+          &lt;/body>
+        &lt;/html></code></pre>
+      </section>
+
+      <section id="sample-content-block">
+        <h2>Sample Content Block</h2>
+
+        <h1>Hello World</h1>
+
+        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <hr>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <ul>
+          <li>In voluptate velit esse cillum</li>
+          <li>In voluptate velit esse cillum</li>
+          <li>In voluptate velit esse cillum</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        © 2020 GitHub, Inc.
+      </section>
+
+      <section id="tabular-data">
+        <h2>Tabular Data</h2>
+        <h3>Default Table</h3>
+        <table>
+          <caption>Table Caption</caption>
+          <thead>
+            <tr>
+              <th scope="col">thead th</th>
+              <th scope="col">thead th</th>
+              <th scope="col">thead th</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>tbody td</td>
+              <td>tbody td</td>
+              <td>tbody td</td>
+            </tr>
+            <tr>
+              <td>tbody td</td>
+              <td>tbody td</td>
+              <td>tbody td</td>
+            </tr>
+            <tr>
+              <td>tbody td</td>
+              <td>tbody td</td>
+              <td>tbody td</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>Table with side headings</h3>
+        <table>
+          <caption>Table Caption</caption>
+          <thead>
+            <tr>
+              <th id="th1" scope="col">thead th</th>
+              <th id="th2" scope="col">thead th</th>
+              <th id="th3" scope="col">thead th</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th id="th4" scope="row" headers="th1">tbody th</th>
+              <td headers="th2 th4">tbody td</td>
+              <td headers="th3 th4">tbody td</td>
+            </tr>
+            <tr>
+              <th id="th5" scope="row" headers="th1">tbody th</th>
+              <td headers="th2 th5">tbody td</td>
+              <td headers="th3 th5">tbody td</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="text-elements">
+        <h2>Text Elements</h2>
+
+        <p>The <a href="#">a element</a> example</p>
+        <p>The <abbr>abbr element</abbr> and an <abbr title="Abbreviation">abbr</abbr> element with title examples</p>
+        <p>The <b>b element</b> example</p>
+        <p>The <cite>cite element</cite> example</p>
+        <p>The <code>code element</code> example</p>
+        <p>The <em>em element</em> example</p>
+        <p>The <del>del element</del> example</p>
+        <p>The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples</p>
+        <p>The <i>i element</i> example</p>
+        <p>The <ins>ins element</ins> example</p>
+        <p>The <kbd>kbd element</kbd> example</p>
+        <p>The <mark>mark element</mark> example</p>
+        <p>The <q>q element</q> example</p>
+        <p>The <q>q element <q>inside</q> a q element</q> example</p>
+        <p>The <s>s element</s> example</p>
+        <p>The <samp>samp element</samp> example</p>
+        <p>The <small>small element</small> example</p>
+        <p>The <span>span element</span> example</p>
+        <p>The <strong>strong element</strong> example</p>
+        <p>The <sub>sub element</sub> example</p>
+        <p>The <sup>sup element</sup> example</p>
+        <p>The <u>u element</u> example</p>
+        <p>The <var>var element</var> example</p>
+      </section>
+
+      <section id="time">
+        <h2>Time</h2>
+
+        <p>Remember, remember the <time datetime="1605-11-05">5<sup>th</sup> of November</time></p>
+      </section>
+    </main>
+
+    <script type="text/javascript">
+      const index = document.getElementById('index')
+      let sections = document.querySelectorAll('main > section')
+      for (let i = 0; i < sections.length; i++) {
+        let title = sections[i].querySelector('h2')
+        if (title)
+          index.innerHTML += `<li><a href="#${sections[i].id}">${title.textContent}</a></li>`
+      }
+    </script>
+  </body>
+</html>
