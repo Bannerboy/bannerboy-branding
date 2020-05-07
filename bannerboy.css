@@ -54,25 +54,17 @@ h1, h2, h3 {
   font-family: gilroy, 'Helvetica Neue', sans-serif;
   color: var(--color-primary);
   font-weight: 900;
-  font-size: 8rem;
+  font-size: 4rem;
   line-height: 1em;
   margin: 0 0 0.3em;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 h1 > small, h2 > small, h3 > small {
-  /* font-family: 'Helvetica Neue', sans-serif; */
-  /* font-weight: 100; */
   font-size: 1em;
   color: var(--color-disabled);
-}
-
-h1 {
-  display: inline-flex;
-  line-height: 10rem;
-  background-image: linear-gradient(var(--color-bannerboy-blue), var(--color-bannerboy-blue));
-  background-repeat: no-repeat;
-  background-size: 100% .1em;
-  background-position: 0 1.05em;
 }
 
 h3 {
@@ -91,4 +83,18 @@ button, a.button {
   padding: 1.5rem 3rem;
   border-radius: 4rem;
   border: solid 0.2rem;
+}
+
+/* Tablets and wider */
+@media (min-width: 768px) {
+  h1, h2, h3 {
+    font-size: 6rem;
+  }
+}
+
+/* Desktop and wider */
+@media (min-width: 1280px) {
+  h1, h2, h3 {
+    font-size: 8rem;
+  }
 }
