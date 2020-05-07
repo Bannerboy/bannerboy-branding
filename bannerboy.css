@@ -45,6 +45,10 @@ body {
   flex-direction: column;
 }
 
+a {
+  color: inherit;
+}
+
 h1, h2, h3 {
   font-family: gilroy, 'Helvetica Neue', sans-serif;
   color: var(--color-primary);
